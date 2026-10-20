@@ -4,6 +4,28 @@
 
 # Apple WLOC 定位修改
 
+## 本仓库使用说明
+
+本仓库为 Yu9191/wloc 的保存副本，从 https://github.com/StricklandF/WLOC- 恢复，恢复基线提交为 `e126446ee479546c038c336f6bb79287472c2e94`。保留原作者署名、许可证和提交历史。
+
+本次只迁移模块的仓库链接和选点入口说明，不改动 `dist/wloc.js`、`dist/wloc-settings.js` 或选点网站源码，不新增系统版本适配。
+
+Shadowrocket 订阅地址：
+
+```text
+https://raw.githubusercontent.com/lisijin-marker/wloc/refs/heads/main/modules/wloc.module
+```
+
+继续使用原选点网站：https://wloc-spoofer.cyberhandyman.workers.dev
+
+在 Shadowrocket 中将旧模块替换为上面的订阅地址并启用，沿用已配置好的 HTTPS 解密和已信任的 CA 证书。仅更换仓库地址无需重新生成证书。尚未配置过的设备按原有 HTTPS 解密、安装并信任证书流程操作。
+
+模块中的脚本、图标和主页链接已改为本仓库地址；两个运行脚本仍为恢复基线的原始内容。在线文件可用性与真实设备定位效果是不同的验证，本仓库迁移不代表已完成 iPhone 实机验证。
+
+以下保留上游说明供参考，其中原仓库订阅链接已失效；请使用本节的新订阅地址。
+
+---
+
 修改 Apple 网络定位服务 (WiFi/基站) 返回的坐标，实现 iOS 网络定位虚拟定位。打开在线选点页面选位置即可生效，无需手动填经纬度。
 
 > ⚠️ **iOS 27 beta 6 起，系统已禁止对 `gs-loc.apple.com` 进行 MITM 拦截。** 目前该版本及之后的 beta 版本暂时无法使用本项目，等待后续适配方案。
